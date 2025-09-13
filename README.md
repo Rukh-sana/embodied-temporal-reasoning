@@ -82,7 +82,7 @@ Most significantly, the agent successfully maintains context across multiple ste
 *Figure 3: Sequential frames showing agent maintaining task context while navigating*
 ![Navigation Sequence](images/4.png)
 *Figure 3: Sequential frames showing agent maintaining task context while navigating*
-![Description](images/1.png)
+
 
 ### Key Findings
 - Agent successfully maintains temporal context across 90+ interaction steps
