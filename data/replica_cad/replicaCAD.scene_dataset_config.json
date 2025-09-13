@@ -1,0 +1,43 @@
+{
+  "dataset_name": "ReplicaCAD",
+  "version": "1.0",
+  "available_scenes": [
+    {
+      "scene_id": "apt_0",
+      "name": "Apartment 0",
+      "type": "residential",
+      "rooms": ["living_room", "kitchen", "bedroom", "bathroom"],
+      "objects": ["sofa", "table", "chair", "bed", "refrigerator"],
+      "difficulty": "easy"
+    },
+    {
+      "scene_id": "apt_1", 
+      "name": "Apartment 1",
+      "type": "residential",
+      "rooms": ["living_room", "kitchen", "bedroom", "bathroom", "office"],
+      "objects": ["sofa", "desk", "bookshelf", "dining_table"],
+      "difficulty": "medium"
+    },
+    {
+      "scene_id": "frl_apartment_0",
+      "name": "FRL Apartment 0",
+      "type": "residential",
+      "rooms": ["living_room", "kitchen", "bedroom"],
+      "objects": ["couch", "coffee_table", "tv", "kitchen_island"],
+      "difficulty": "medium"
+    }
+  ],
+  "default_scene": "apt_0",
+  "sensor_specifications": {
+    "rgb_camera": {
+      "width": 640,
+      "height": 480,
+      "position": [0.0, 1.5, 0.0]
+    },
+    "depth_camera": {
+      "width": 640,
+      "height": 480,
+      "position": [0.0, 1.5, 0.0]
+    }
+  }
+}

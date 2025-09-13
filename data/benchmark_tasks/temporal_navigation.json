@@ -1,0 +1,39 @@
+{
+  "task_category": "temporal_navigation",
+  "description": "Multi-step navigation tasks requiring temporal reasoning",
+  "tasks": [
+    {
+      "task_id": "nav_001",
+      "command": "Go to the kitchen, then return to the living room",
+      "scene": "apt_0",
+      "expected_steps": ["navigate_to_kitchen", "navigate_to_living_room"],
+      "success_criteria": {
+        "completion_rate": 0.85,
+        "max_steps": 50
+      },
+      "difficulty": "easy"
+    },
+    {
+      "task_id": "nav_002", 
+      "command": "Find the bedroom, look around, then go to the kitchen",
+      "scene": "apt_1",
+      "expected_steps": ["navigate_to_bedroom", "explore_room", "navigate_to_kitchen"],
+      "success_criteria": {
+        "completion_rate": 0.80,
+        "max_steps": 75
+      },
+      "difficulty": "medium"
+    },
+    {
+      "task_id": "nav_003",
+      "command": "Tour all rooms starting from living room, ending in bedroom",
+      "scene": "apt_0",
+      "expected_steps": ["start_living_room", "visit_kitchen", "visit_bathroom", "end_bedroom"],
+      "success_criteria": {
+        "completion_rate": 0.75,
+        "max_steps": 100
+      },
+      "difficulty": "hard"
+    }
+  ]
+}

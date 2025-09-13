@@ -1,0 +1,45 @@
+{
+  "evaluation_framework": "temporal_reasoning_assessment",
+  "metrics": {
+    "primary": {
+      "task_completion_rate": {
+        "target": 0.85,
+        "measurement": "successful_tasks / total_tasks",
+        "weight": 0.4
+      },
+      "temporal_consistency": {
+        "target": 0.9,
+        "measurement": "context_retention_score",
+        "weight": 0.3
+      },
+      "sub_goal_accuracy": {
+        "target": 0.9,
+        "measurement": "correct_sub_goals / total_sub_goals", 
+        "weight": 0.3
+      }
+    },
+    "secondary": {
+      "action_efficiency": {
+        "target": 0.2,
+        "measurement": "reduction_in_redundant_actions",
+        "weight": 0.3
+      },
+      "recovery_success": {
+        "target": 0.75,
+        "measurement": "successful_recoveries / failure_scenarios",
+        "weight": 0.4
+      },
+      "processing_overhead": {
+        "target": 0.3,
+        "measurement": "temporal_processing_time / baseline_time",
+        "weight": 0.3
+      }
+    }
+  },
+  "baseline_comparisons": [
+    "frame_by_frame_llava",
+    "simple_command_queue",
+    "state_of_art_navigation",
+    "oracle_perfect_memory"
+  ]
+}

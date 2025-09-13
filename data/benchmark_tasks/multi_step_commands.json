@@ -1,0 +1,30 @@
+{
+  "task_category": "multi_step_commands",
+  "description": "Complex commands requiring sequential execution",
+  "tasks": [
+    {
+      "task_id": "cmd_001",
+      "command": "Find the blue chair and describe what's next to it",
+      "scene": "apt_0",
+      "type": "object_search_describe",
+      "temporal_requirements": ["object_detection", "spatial_reasoning", "description"],
+      "expected_duration": 30
+    },
+    {
+      "task_id": "cmd_002",
+      "command": "Count all chairs in the apartment, then tell me the total",
+      "scene": "apt_1", 
+      "type": "counting_task",
+      "temporal_requirements": ["room_exploration", "object_counting", "memory_retention"],
+      "expected_duration": 60
+    },
+    {
+      "task_id": "cmd_003",
+      "command": "Go to each room and tell me what furniture you see",
+      "scene": "frl_apartment_0",
+      "type": "comprehensive_survey",
+      "temporal_requirements": ["navigation", "observation", "memory", "reporting"],
+      "expected_duration": 90
+    }
+  ]
+}
