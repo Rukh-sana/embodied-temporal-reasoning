@@ -30,19 +30,3 @@ Before starting, ensure you have:
 git clone https://github.com/your-username/temporal-llava-habitat.git
 cd temporal-llava-habitat
 
-## System Requirements
-[Your requirements content here]
-
-<details>
-<summary><b>2. Create Environment</b></summary>
-```bash
-# Create conda environment
-conda create -n temporal-llava python=3.9
-conda activate temporal-llava
-
-<details>
-<summary><b>3. Install project dependencies</b></summary>
-```bash
-pip install -r requirements.txt
-Install in development mode
-pip install -e .
