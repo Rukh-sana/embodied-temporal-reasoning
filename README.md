@@ -1,47 +1,111 @@
-# Temporal Multimodal Reasoning in Embodied AI
+# Temporal LLaVA Habitat
+
+
+<div align="center">
+
+![Python](https://img.shields.io/badge/python-v3.8+-blue.svg)
+![Contributions welcome](https://img.shields.io/badge/contributions-welcome-orange.svg)
+![License](https://img.shields.io/badge/license-MIT-green.svg)
+
+*Augmenting Vision-Language Models with Temporal Reasoning for Embodied AI*
+
+[Demo](#demo) • [Installation](#installation) • [Usage](#usage) • [Research](#research-context) • [Citation](#citation)
+
+</div>
 
 ## Overview
-This repository implements temporal reasoning capabilities for vision-language models in embodied AI systems, enabling coherent multi-step task execution in simulated environments.
 
-## Research Context
-This work addresses the fundamental limitation of current vision-language models that process observations frame-by-frame, lacking temporal awareness necessary for sequential task execution.
+This repository implements temporal reasoning capabilities for vision-language models in simulated embodied environments, addressing the critical limitation of frame-by-frame processing in current multimodal AI systems.The field of embodied artificial intelligence stands at a critical juncture. While current vision-language models like LLaVA (Large Language and Vision Assistant) have achieved remarkable success in static image understanding, they face significant limitations when deployed in dynamic, real-world environments where temporal reasoning is essential. This research addresses a fundamental gap: how can we augment vision-language models with temporal reasoning capabilities to enable more sophisticated embodied AI systems?
 
-## Problem Statement
-Current vision-language models in embodied AI systems lack temporal awareness, preventing coherent multi-step task execution. This research develops systematic temporal reasoning capabilities through:
-- LSTM-based temporal fusion mechanisms
-- Hierarchical command decomposition
-- Memory-augmented state tracking
-- Comprehensive evaluation frameworks
+### The Challenge: Beyond Static Understanding
+Current vision-language models like LLaVA excel at static image interpretation but fail in embodied AI scenarios requiring sequential task execution. This research develops systematic temporal reasoning integration.Current multimodal AI systems excel at analyzing individual images and answering questions about static scenes. However, embodied agents operating in real environments must understand temporal sequences, track objects across time, predict future states, and make decisions based on historical context. This temporal blindness represents a critical bottleneck for practical embodied AI applications.
+Consider a household robot tasked with "finding the keys that were left on the kitchen counter earlier." Current vision-language models can identify keys and counters in individual frames but cannot maintain temporal context about where objects were previously located or how scenes have changed over time. This limitation severely constrains their utility in real-world scenarios.
 
-## Key Features
-- **Temporal State Representation**: LSTM-based fusion for sequential observations
-- **Hierarchical Command Processing**: Multi-step task decomposition and tracking
-- **Memory System**: Persistent environmental state management
-- **Evaluation Framework**: Comprehensive benchmarks for temporal reasoning assessment
+### Research Objectives
+This research proposal aims to develop Temporal LLaVA Habitat, a novel framework that integrates temporal reasoning capabilities into vision-language models for embodied AI applications. The key objectives include:
+### 1. Temporal Memory Integration
+Developing architectures that can maintain and reason over temporal sequences of visual observations, enabling models to understand how scenes evolve over time.
+### 2. Multi-Scale Temporal Reasoning
+Implementing mechanisms to handle different temporal scales - from immediate frame-to-frame changes to long-term behavioral patterns and environmental dynamics.
+### 3.Embodied Task Performance
+Validating the approach on realistic embodied AI tasks in simulated environments, demonstrating improved performance on temporally-dependent challenges.
 
-## Installation
+## Simulation Environment
+Leveraging AI Habitat simulation platform provides:
+
+- Controlled experimental conditions for systematic evaluation
+- Diverse scenarios for robust temporal reasoning assessment
+- Standardized benchmarks for comparing against existing approaches
+- Scalable training environments for large-scale model development
+
+## Evaluation Framework
+Comprehensive evaluation across multiple dimensions:
+
+### Temporal Understanding: 
+Assessing ability to track changes over time
+### Memory Efficiency: 
+Evaluating computational and storage requirements
+### Task Performance: 
+Measuring improvement on embodied AI benchmarks
+### Generalization: 
+Testing transfer to unseen environments and tasks
+
+## Broader Impact and Applications
+The implications of this research extend across multiple domains:
+### Robotics: 
+Enabling robots to better understand and navigate dynamic environments by maintaining temporal context of their observations.
+### Autonomous Systems: 
+Improving decision-making in autonomous vehicles and drones through better temporal scene understanding.
+###Human-AI Interaction: 
+Facilitating more natural interactions by enabling AI systems to remember and reason about past interactions and environmental changes.
+### Scientific Discovery: 
+Supporting research in fields requiring temporal analysis of visual data, from biology to astronomy.
+
+## Preliminary Results and Validation
+
+### System Implementation
+Our initial prototype successfully integrates LLaVA with AI Habitat simulation environment, enabling embodied agents to perform vision-language tasks with temporal context.
+
+![System Interface](images/1.png)
+*Figure 1: ReplicaCAD LLaVA Agent interface showing step-by-step interaction*
+
+### Scene Understanding Capabilities
+The system demonstrates sophisticated scene analysis, providing detailed descriptions that go beyond static object detection to include spatial relationships and contextual reasoning.
+
+![Scene Description](images/2.png)
+*Figure 2: Agent providing detailed scene description with spatial reasoning (Step 38)*
+
+### Temporal Navigation Tasks
+Most significantly, the agent successfully maintains context across multiple steps, demonstrating temporal reasoning in navigation tasks.
+
+![Navigation Sequence](images/3.png)
+*Figure 3: Sequential frames showing agent maintaining task context while navigating*
+![Navigation Sequence](images/4.png)
+*Figure 3: Sequential frames showing agent maintaining task context while navigating*
+
+
+### Key Findings
+- Agent successfully maintains temporal context across 90+ interaction steps
+- Demonstrates understanding of spatial relationships and environmental changes
+- Shows reasoning capabilities that connect observations to task objectives
+- Successfully executes multi-step navigation tasks requiring memory of previous states
+
+
+## Quick Start
 
 ### Prerequisites
 - Python 3.8+
 - CUDA-compatible GPU (recommended)
-- Habitat-Sim environment
-- Ollama with LLaVA model
+- 16GB RAM minimum
+- Conda/Miniconda
 
-### Setup
+### Installation
+
+<details>
+<summary>📋 Complete Installation Guide</summary>
+
+#### 1. Clone Repository
 ```bash
-git clone https://github.com/your-username/temporal-multimodal-embodied-ai.git
-cd temporal-multimodal-embodied-ai
-pip install -r requirements.txt
+git clone https://github.com/your-username/temporal-llava-habitat.git
+cd temporal-llava-habitat
 
-## Dataset Requirements
-
-### ReplicaCAD Dataset
-This project uses the ReplicaCAD dataset for realistic indoor environments:
-- Download from: [ReplicaCAD Official Repository]
-- Place in: `data/replica_cad/`
-- Required files: `replicaCAD.scene_dataset_config.json`
-
-### Scene Configuration
-```python
-scene_path = "data/replica_cad/replicaCAD.scene_dataset_config.json"
-available_scenes = ["apt_0", "apt_1", "apt_2", "frl_apartment_0", ...]
