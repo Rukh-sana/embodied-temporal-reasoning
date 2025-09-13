@@ -30,6 +30,37 @@ Implementing mechanisms to handle different temporal scales - from immediate fra
 ### 3.Embodied Task Performance
 Validating the approach on realistic embodied AI tasks in simulated environments, demonstrating improved performance on temporally-dependent challenges.
 
+## Simulation Environment
+Leveraging AI Habitat simulation platform provides:
+
+- Controlled experimental conditions for systematic evaluation
+- Diverse scenarios for robust temporal reasoning assessment
+- Standardized benchmarks for comparing against existing approaches
+- Scalable training environments for large-scale model development
+
+## Evaluation Framework
+Comprehensive evaluation across multiple dimensions:
+
+### Temporal Understanding: 
+Assessing ability to track changes over time
+### Memory Efficiency: 
+Evaluating computational and storage requirements
+### Task Performance: 
+Measuring improvement on embodied AI benchmarks
+### Generalization: 
+Testing transfer to unseen environments and tasks
+
+## Broader Impact and Applications
+The implications of this research extend across multiple domains:
+### Robotics: 
+Enabling robots to better understand and navigate dynamic environments by maintaining temporal context of their observations.
+### Autonomous Systems: 
+Improving decision-making in autonomous vehicles and drones through better temporal scene understanding.
+###Human-AI Interaction: 
+Facilitating more natural interactions by enabling AI systems to remember and reason about past interactions and environmental changes.
+### Scientific Discovery: 
+Supporting research in fields requiring temporal analysis of visual data, from biology to astronomy.
+
 
 ## Quick Start
 
