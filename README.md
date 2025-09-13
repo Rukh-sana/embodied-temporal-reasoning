@@ -37,3 +37,11 @@ Current vision-language models like LLaVA excel at static image interpretation b
 ```bash
 git clone https://github.com/your-username/temporal-llava-habitat.git
 cd temporal-llava-habitat
+
+</details>
+<details>
+<summary><b>2. Clone Repository & Create Environment</b></summary>
+```bash
+# Clone the repository
+git clone https://github.com/your-username/temporal-llava-habitat.git
+cd temporal-llava-habitat
