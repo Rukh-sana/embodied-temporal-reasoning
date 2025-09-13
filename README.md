@@ -61,6 +61,32 @@ Facilitating more natural interactions by enabling AI systems to remember and re
 ### Scientific Discovery: 
 Supporting research in fields requiring temporal analysis of visual data, from biology to astronomy.
 
+## Preliminary Results and Validation
+
+### System Implementation
+Our initial prototype successfully integrates LLaVA with AI Habitat simulation environment, enabling embodied agents to perform vision-language tasks with temporal context.
+
+![System Interface](images/1.png)
+*Figure 1: ReplicaCAD LLaVA Agent interface showing step-by-step interaction*
+
+### Scene Understanding Capabilities
+The system demonstrates sophisticated scene analysis, providing detailed descriptions that go beyond static object detection to include spatial relationships and contextual reasoning.
+
+![Scene Description](images/2.png)
+*Figure 2: Agent providing detailed scene description with spatial reasoning (Step 38)*
+
+### Temporal Navigation Tasks
+Most significantly, the agent successfully maintains context across multiple steps, demonstrating temporal reasoning in navigation tasks.
+
+![Navigation Sequence](images/3.png)
+*Figure 3: Sequential frames showing agent maintaining task context while navigating*
+
+### Key Findings
+- Agent successfully maintains temporal context across 90+ interaction steps
+- Demonstrates understanding of spatial relationships and environmental changes
+- Shows reasoning capabilities that connect observations to task objectives
+- Successfully executes multi-step navigation tasks requiring memory of previous states
+
 
 ## Quick Start
 
