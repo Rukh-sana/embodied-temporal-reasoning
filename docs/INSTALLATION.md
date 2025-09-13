@@ -39,3 +39,10 @@ cd temporal-llava-habitat
 # Create conda environment
 conda create -n temporal-llava python=3.9
 conda activate temporal-llava
+
+<details>
+<summary><b>3. Install project dependencies</b></summary>
+```bash
+pip install -r requirements.txt
+Install in development mode
+pip install -e .
