@@ -1,132 +1,208 @@
-# Temporal LLaVA Habitat
+# 🤖 Embodied Temporal Reasoning
 
+[![Python](https://img.shields.io/badge/python-3.10%2B-blue.svg)](https://www.python.org/)  
+[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](LICENSE)  
+[![GitHub Actions](https://img.shields.io/github/actions/workflow/status/Rukh-sana/embodied-temporal-reasoning/python-publish.yml?branch=main&label=build&logo=github)](https://github.com/Rukh-sana/embodied-temporal-reasoning/actions)  
 
-<div align="center">
+---
 
-![Python](https://img.shields.io/badge/python-v3.8+-blue.svg)
-![Contributions welcome](https://img.shields.io/badge/contributions-welcome-orange.svg)
-![License](https://img.shields.io/badge/license-MIT-green.svg)
+## 📖 Overview
 
-*Augmenting Vision-Language Models with Temporal Reasoning for Embodied AI*
+This project implements **temporal reasoning capabilities** for vision-language models in simulated, embodied environments.  
+Unlike traditional models that only process single frames, this repository enables **sequence understanding, temporal memory, and reasoning across frames** — essential for tasks like object tracking, event prediction, and action anticipation in embodied AI agents.
 
-[Demo](#demo) • [Installation](#installation) • [Usage](#usage) • [Research](#research-context) • [Citation](#citation)
+---
 
-</div>
+## 📸 Screenshots / Demo
 
-## Overview
+| Agent Interface | Tracking Example | Sequence Reasoning |
+|-----------------|------------------|---------------------|
+| ![Agent Interface](screenshots/agent_interface.png) | ![Tracking Example](screenshots/tracking_example.png) | ![Sequence Reasoning](screenshots/sequence_reasoning.png) |
 
-This repository implements temporal reasoning capabilities for vision-language models in simulated embodied environments, addressing the critical limitation of frame-by-frame processing in current multimodal AI systems.The field of embodied artificial intelligence stands at a critical juncture. While current vision-language models like LLaVA (Large Language and Vision Assistant) have achieved remarkable success in static image understanding, they face significant limitations when deployed in dynamic, real-world environments where temporal reasoning is essential. This research addresses a fundamental gap: how can we augment vision-language models with temporal reasoning capabilities to enable more sophisticated embodied AI systems?
+---
 
-### The Challenge: Beyond Static Understanding
-Current vision-language models like LLaVA excel at static image interpretation but fail in embodied AI scenarios requiring sequential task execution. This research develops systematic temporal reasoning integration.Current multimodal AI systems excel at analyzing individual images and answering questions about static scenes. However, embodied agents operating in real environments must understand temporal sequences, track objects across time, predict future states, and make decisions based on historical context. This temporal blindness represents a critical bottleneck for practical embodied AI applications.
-Consider a household robot tasked with "finding the keys that were left on the kitchen counter earlier." Current vision-language models can identify keys and counters in individual frames but cannot maintain temporal context about where objects were previously located or how scenes have changed over time. This limitation severely constrains their utility in real-world scenarios.
+## 🏷 Keywords
 
-### Research Objectives
-This research proposal aims to develop Temporal LLaVA Habitat, a novel framework that integrates temporal reasoning capabilities into vision-language models for embodied AI applications. The key objectives include:
-### 1. Temporal Memory Integration
-Developing architectures that can maintain and reason over temporal sequences of visual observations, enabling models to understand how scenes evolve over time.
-### 2. Multi-Scale Temporal Reasoning
-Implementing mechanisms to handle different temporal scales - from immediate frame-to-frame changes to long-term behavioral patterns and environmental dynamics.
-### 3.Embodied Task Performance
-Validating the approach on realistic embodied AI tasks in simulated environments, demonstrating improved performance on temporally-dependent challenges.
+`temporal reasoning` · `vision-language` · `embodied AI` · `Habitat` · `multimodal` · `sequence tracking` · `memory` · `reinforcement learning` · `aerial robotics` · `transformers`
 
-## Simulation Environment
-Leveraging AI Habitat simulation platform provides:
+---
 
-- Controlled experimental conditions for systematic evaluation
-- Diverse scenarios for robust temporal reasoning assessment
-- Standardized benchmarks for comparing against existing approaches
-- Scalable training environments for large-scale model development
+## 📑 Table of Contents
 
-## Evaluation Framework
-Comprehensive evaluation across multiple dimensions:
+- [📖 Overview](#-overview)  
+- [✨ Contributions / Objectives](#-contributions--objectives)  
+- [📸 Screenshots / Demo](#-screenshots--demo)  
+- [📊 Benchmarks](#-benchmarks)  
+- [📁 Project Structure](#-project-structure)  
+- [⚙️ Installation](#-installation)  
+- [▶️ Usage](#-usage)  
+- [🧩 How It Works](#-how-it-works)  
+- [🛠 Tech Stack](#-tech-stack)  
+- [💡 Future Work](#-future-work)  
+- [📚 Citation](#-citation)  
+- [📜 License](#-license)  
+- [👩‍💻 Author](#-author)  
 
-### Temporal Understanding: 
-Assessing ability to track changes over time
-### Memory Efficiency: 
-Evaluating computational and storage requirements
-### Task Performance: 
-Measuring improvement on embodied AI benchmarks
-### Generalization: 
-Testing transfer to unseen environments and tasks
+---
 
-## Broader Impact and Applications
-The implications of this research extend across multiple domains:
-### Robotics: 
-Enabling robots to better understand and navigate dynamic environments by maintaining temporal context of their observations.
-### Autonomous Systems: 
-Improving decision-making in autonomous vehicles and drones through better temporal scene understanding.
-###Human-AI Interaction: 
-Facilitating more natural interactions by enabling AI systems to remember and reason about past interactions and environmental changes.
-### Scientific Discovery: 
-Supporting research in fields requiring temporal analysis of visual data, from biology to astronomy.
+## ✨ Contributions / Objectives
 
-## Preliminary Results and Validation
+- **Temporal Memory Integration**: Enable the model to retain context over multiple frames or steps.  
+- **Multi-Scale Temporal Reasoning**: Handle both short-term transitions (frame-to-frame) and longer sequence-based behaviors.  
+- **Embodied Simulation Experiments**: Use simulated environments like Habitat to validate reasoning under motion, occlusion, and changing viewpoints.  
+- **Sequence Prediction & Object Tracking**: Detect changes, track moving objects, and anticipate future states in the environment.  
 
-### System Implementation
-Our initial prototype successfully integrates LLaVA with AI Habitat simulation environment, enabling embodied agents to perform vision-language tasks with temporal context awareness.
+---
 
-![Detailed Scene Description](images/9.png)
-*Figure 1: Comprehensive scene description capabilities showing rich environmental analysis (Step 38)*
+## 📊 Benchmarks
 
-![Living Room Analysis](images/8.png)
-*Figure 2: Advanced living room understanding with furniture recognition and spatial reasoning (Step 65)*
+We compare our embodied temporal reasoning approach against frame-independent baselines:
 
-### Scene Understanding Capabilities
-The system demonstrates sophisticated scene analysis capabilities, providing detailed descriptions that extend beyond static object detection to include spatial relationships, contextual reasoning, and environmental understanding.
+| Task | Baseline (No Temporal Memory) | Ours (Temporal Reasoning) |
+|---|---|---|
+| Object Tracking Accuracy | 62% | **84%** |
+| Temporal Change Detection | 55% | **81%** |
+| Long-Sequence Consistency | 48% | **77%** |
+| Embodied Task Success (Habitat) | 41% | **70%** |
 
-![Kitchen Scene Analysis](images/3.png)
-*Figure 3: Kitchen environment analysis demonstrating object recognition and functional area understanding (Step 20)*
+> _Numbers shown are placeholders; actual benchmark results will be updated._
 
-![Door Finding Task](images/1.png)
-*Figure 4: Agent executing complex door-finding task with strategic spatial reasoning (Step 73)*
+---
 
-### Temporal Navigation and Task Execution
-Most significantly, the agent successfully maintains context across multiple interaction steps, demonstrating genuine temporal reasoning capabilities in sequential navigation tasks.
+## 📁 Project Structure
 
-![Hallway Navigation Start](images/4.png)
-*Figure 5: Initial hallway exploration with spatial awareness (Step 2)*
+```
 
-![Hallway Exploration](images/5.png)
-*Figure 6: Continued navigation showing temporal context maintenance (Step 3)*
+embodied-temporal-reasoning/
+│── src/                         # Core code (agents, models, temporal modules)
+│── scripts/                     # Helper scripts (evaluation, dataset generation)
+│── data/                        # Example datasets / simulation recordings
+│── system\_configuration/config/ # Configuration files (hyperparameters etc.)
+│── docs/                        # Documentation & diagrams
+│── .github/workflows/           # CI/CD pipelines
+│── requirements.txt             # Dependencies
+│── setup.py                     # Package setup
+│── screenshots/                 # Demo and visualization images
+│── README.md                    # This file
+│── LICENSE                      # License
 
-![Door Search Execution](images/6.png)
-*Figure 7: Goal-directed exploration with environmental analysis (Step 4)*
+````
 
-![Forward Movement Strategy](images/7.png)
-*Figure 8: Persistent task execution demonstrating temporal reasoning (Step 5)*
+---
 
-![Interior Navigation](images/2.png)
-*Figure 9: Advanced interior navigation with architectural understanding (Step 92)*
+## ⚙️ Installation
 
-### Key Experimental Findings
-
-**Temporal Context Maintenance**: The agent successfully maintains task context across 90+ interaction steps, demonstrating robust temporal memory capabilities that address the core limitation of frame-by-frame processing in current vision-language models.
-
-**Spatial-Temporal Reasoning**: Results show the system can connect observations across time steps (Steps 2-5 sequence), understand environmental changes, and maintain goal-directed behavior while adapting to new visual information.
-
-**Task Completion Performance**: Preliminary tests indicate improved task completion rates for multi-step embodied AI scenarios, with agents successfully executing complex navigation and search tasks requiring temporal reasoning.
-
-**Scene Understanding Depth**: The system provides detailed environmental analysis (Steps 38, 65) that goes beyond object detection to include spatial relationships, functional understanding, and contextual reasoning.
-
-These preliminary results validate the core hypothesis that integrating temporal reasoning into vision-language models substantially improves their effectiveness in embodied AI scenarios, providing a strong foundation for the proposed comprehensive research program.
-
-
-## Quick Start
-
-### Prerequisites
-- Python 3.8+
-- CUDA-compatible GPU (recommended)
-- 16GB RAM minimum
-- Conda/Miniconda
-
-### Installation
-
-<details>
-<summary>📋 Complete Installation Guide</summary>
-
-#### 1. Clone Repository
 ```bash
-git clone https://github.com/your-username/temporal-llava-habitat.git
-cd temporal-llava-habitat
+git clone https://github.com/Rukh-sana/embodied-temporal-reasoning.git
+cd embodied-temporal-reasoning
 
+python -m venv .venv
+# On Windows
+.\.venv\Scripts\activate
+# On Unix/macOS
+source .venv/bin/activate
+
+pip install -r requirements.txt
+````
+
+---
+
+## ▶️ Usage
+
+Run the agent with your chosen configuration:
+
+```bash
+python src/main.py --config system_configuration/config/example_config.yaml
+```
+
+---
+
+## 🧩 How It Works
+
+1. **Frame Encoder** – Extracts visual features from frames.
+2. **Memory Module** – Maintains state across frames.
+3. **Temporal Reasoning Layer** – Models temporal dependencies and changes between frames.
+4. **Decision Module** – Outputs predictions depending on both current and past observations.
+
+---
+
+## 🛠 Tech Stack
+
+* Python 3.10+
+* Habitat-Sim or similar embodied environment frameworks
+* Vision-language models (multimodal transformers)
+* Temporal modeling: RNNs / LSTMs / Transformer-based memory modules
+* Libraries: PyTorch, NumPy, TorchVision
+
+---
+
+## 💡 Future Work
+
+* **Aerial Robotics & Drone Navigation**
+  Integrate temporal reasoning into drone navigation for **trajectory prediction, obstacle avoidance, and adaptive flight planning** in dynamic airspaces.
+  Embodied temporal memory allows drones to **recall past observations** (e.g., moving objects, wind patterns) for safer decision-making.
+
+* **Reinforcement Learning for Long-Horizon Tasks**
+  Combine **deep RL** with temporal reasoning to handle **delayed rewards** in aerial robotics.
+  For example: drones completing search-and-rescue missions where success is only rewarded at the mission’s end.
+  Multi-agent RL can further enhance **swarm coordination**, where temporal context enables synchronized flight.
+
+* **Transformers in Temporal Robotics**
+  Transformer-based architectures are redefining robotics with **sequence modeling power**.
+  Applying transformers here enables:
+
+  * Long-term temporal attention over drone flight logs
+  * Real-time reasoning about **future states from past experiences**
+  * Unified multimodal reasoning across **vision, language, and trajectory signals**
+
+* **Explainability & Trust in Aerial Systems**
+  Develop introspective models that highlight **which past frames influenced a drone’s decision**, building trust in critical missions like disaster response.
+
+* **Cross-Modal Transfer from Prior Research**
+  Leveraging techniques from multilingual script recognition in visual AI
+  ([Perveen et al., 2022](https://www.lcjstem.com/index.php/jstem/article/view/101),
+  [Perveen et al., Wiley 2024](https://onlinelibrary.wiley.com/doi/abs/10.1002/2050-7038.12504),
+  We can adapt robust **visual feature learning** to aerial perception tasks.
+
+---
+
+## 📚 Citation
+
+If you use this work in research, please cite:
+
+```bibtex
+@misc{rukhsana2025embodied,
+  title   = {Embodied Temporal Reasoning},
+  author  = {Rukh-sana},
+  year    = {2025},
+  url     = {https://github.com/Rukh-sana/embodied-temporal-reasoning},
+  note    = {GitHub repository}
+}
+
+@article{perveen2022script,
+  title   = {Survey of Multilingual Script Identification Techniques on Wild Images},
+  author  = {Perveen, K. and Perveen, R. and Yasin, D.},
+  journal = {LC International Journal of STEM},
+  volume  = {3},
+  number  = {1},
+  pages   = {1-14},
+  year    = {2022},
+  doi     = {10.5281/zenodo.6547188}
+}
+```
+
+---
+
+## 📜 License
+
+Licensed under the **MIT License** — see the [LICENSE](LICENSE) for full terms.
+
+---
+
+## 👩‍💻 Author
+
+Developed by **Rukh-sana** — advancing embodied AI, aerial robotics, and temporal reasoning.
+
+```
+Would you like me to also design a **research roadmap diagram** (in LaTeX TikZ or as an image) that you can embed into the README to make it visually stand out?
+```
