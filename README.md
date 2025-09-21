@@ -12,7 +12,7 @@ _Augmenting Vision-Language Models with Temporal Reasoning for Embodied AI_
 
 ## ✨ Overview  
 
-Recent advances in **vision-language models (VLMs)** like LLaVA (Large Language and Vision Assistant) have revolutionized **static image understanding**. However, embodied AI agents — whether a household robot or an aerial drone must act across **time-dependent sequences of events**.  
+Recent advances in **vision-language models (VLMs)** like LLaVA (Large Language and Vision Assistant) have revolutionized **static image understanding**. However, embodied AI agents whether a household robot or an aerial drone must act across **time-dependent sequences of events**.  
 
 This repository extends [Habitat-Sim](https://github.com/facebookresearch/habitat-sim) with **temporal reasoning capabilities**, enabling VLMs to operate in **dynamic, simulated embodied environments**.  
 
@@ -136,10 +136,9 @@ If you use this repository, please cite:
 
 This work lays the foundation for **temporal reasoning in embodied AI**, but there are exciting future directions:
 
-* **Aerial Robotics & Drones** – Extend temporal reasoning to aerial navigation tasks, integrating **reinforcement learning** for obstacle avoidance and trajectory prediction.
-* **Transformers in Robotics** – Use transformer-based architectures for **long-horizon temporal memory**, vital for drones, service robots, and autonomous systems.
-* **Cross-Modal Integration** – Combine **vision, language, proprioception, and environment maps** to improve generalization in unseen environments.
-* **Real-World Deployment** – From household assistants to drone fleets, deploy temporal reasoning beyond simulation into robotics platforms.
+* **Aerial Robotics & Drones** : Use transformer-based architectures for **long-horizon temporal memory**, vital for drones, service robots, and autonomous systems.
+* **Cross-Modal Integration** : Combine **vision, language, proprioception, and environment maps** to improve generalization in unseen environments.
+* **Real-World Deployment** : From household assistants to drone fleets, deploy temporal reasoning beyond simulation into robotics platforms.
 
 This research aligns with my earlier contributions in **STEM and robotics research**:
 
