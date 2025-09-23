@@ -12,11 +12,11 @@ _Augmenting Vision-Language Models with Temporal Reasoning for Embodied AI_
 
 ## ✨ Overview  
 
-Recent advances in **vision-language models (VLMs)**, such as LLaVA (Large Language and Vision Assistant), have revolutionised **static image understanding**. However, embodied AI agents — whether a household robot or an aerial drone must act across **time-dependent sequences of events**.  
+Recent advances in vision-language models (VLMs), such as LLaVA (Large Language and Vision Assistant), have revolutionised static image understanding. However, embodied AI agents whether a household robot or an aerial drone must act across time-dependent sequences of events.  
 
-This repository extends [Habitat-Sim](https://github.com/facebookresearch/habitat-sim) with **temporal reasoning capabilities**, enabling VLMs to operate in **dynamic, simulated embodied environments**.  
+This repository extends [Habitat-Sim](https://github.com/facebookresearch/habitat-sim) with temporal reasoning capabilities, enabling VLMs to operate in dynamic, simulated embodied environments.  
 
-By augmenting LLaVA with **temporal sequence modelling**, this project demonstrates:  
+By augmenting LLaVA with temporal sequence modelling, this project demonstrates:  
 
 - **Tracking objects across frames** instead of isolated images  
 - **Inferring cause-effect relationships** in simulated worlds  
