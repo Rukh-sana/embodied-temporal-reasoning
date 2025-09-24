@@ -111,9 +111,7 @@ Current vision-language models process observations **independently**, causing c
 ---
 
 
-## 🎯 **SECTION 5: Add State-of-the-Art Comparison** 
-*(Insert this NEW section after "System Architecture")*
-```markdown
+
 ## 🥇 **Comparison with State-of-the-Art**
 
 ### Performance Benchmark Comparison
