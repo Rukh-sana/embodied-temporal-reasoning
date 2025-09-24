@@ -87,6 +87,28 @@ All performance improvements show **p < 0.001** with **Cohen's d > 2.0** (large 
 
 
 
+## ⚡ **Quick Start**
+
+### 🐍 Installation & Setup
+```bash
+# Clone repository
+git clone https://github.com/Rukh-sana/embodied-temporal-reasoning.git
+cd embodied-temporal-reasoning
+
+# Create conda environment
+conda create -n temporal-llava python=3.8
+conda activate temporal-llava
+
+# Install dependencies
+pip install -r requirements.txt
+pip install habitat-sim habitat-lab
+
+# Setup LLaVA model
+ollama serve
+ollama pull llava:latest
+
+```
+
 
 
 
