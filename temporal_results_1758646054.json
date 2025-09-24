@@ -1,0 +1,56 @@
+{
+  "experiment_info": {
+    "timestamp": 1758646054,
+    "model": "LLaVA + Temporal Memory Buffer",
+    "environment": "Habitat-Sim",
+    "tasks_completed": 4
+  },
+  "performance_metrics": {
+    "success_rate_percent": 100.0,
+    "avg_query_latency_ms": 1267.1,
+    "avg_action_latency_ms": 59.9,
+    "memory_integration": "Active"
+  },
+  "research_targets": {
+    "task_completion_85_percent": {
+      "target": 85.0,
+      "achieved": 100.0,
+      "meets_target": true
+    },
+    "action_latency_100ms": {
+      "target": 100.0,
+      "achieved": 59.9,
+      "meets_target": true
+    }
+  },
+  "detailed_results": [
+    {
+      "task_name": "Basic scene understanding",
+      "success": true,
+      "query_time_ms": 905.8,
+      "action_time_ms": 55.4,
+      "memory_steps": 1
+    },
+    {
+      "task_name": "Temporal context integration",
+      "success": true,
+      "query_time_ms": 1143.8,
+      "action_time_ms": 58.7,
+      "memory_steps": 2
+    },
+    {
+      "task_name": "Memory-enhanced navigation",
+      "success": true,
+      "query_time_ms": 1422.6,
+      "action_time_ms": 61.3,
+      "memory_steps": 3
+    },
+    {
+      "task_name": "Sequential reasoning",
+      "success": true,
+      "query_time_ms": 1596.2,
+      "action_time_ms": 64.2,
+      "memory_steps": 4
+    }
+  ]
+}
