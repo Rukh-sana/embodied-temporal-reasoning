@@ -19,7 +19,6 @@ Standard LLaVA: **12% success** → Our Temporal LLaVA: **100% success** on sequ
 - 🧠 Extended memory: **90+ step** context retention
 - 🎯 Perfect accuracy: **100%** task completion rate
 
-[**[Paper]**](#) | [**[Demo]**](#demo) | [**[Installation]**](#installation) | [**[Usage]**](#usage)
 
 ## 📋 **Table of Contents**
 - [🔬 Research Problem](#research-problem-addressed)
@@ -38,13 +37,6 @@ Standard LLaVA: **12% success** → Our Temporal LLaVA: **100% success** on sequ
 ### The Sequential Task Failure Problem
 Current vision-language models process observations **independently**, causing catastrophic failure on sequential tasks that require temporal context.
 
-| Challenge | Standard LLaVA | Our Solution |
-|-----------|----------------|--------------|
-| **Multi-step Commands** | 12% success | **100% success** ✅ |
-| **Context Retention** | 1-2 steps | **90+ steps** ✅ |
-| **Memory Integration** | None | **Priority-weighted** ✅ |
-| **Real-time Performance** | N/A | **59.9ms latency** ✅ |
-
 **Research Gap Addressed**: The critical lack of systematic temporal memory mechanisms for extended interaction sequences in embodied AI environments.
 
 ## Key Research Contributions
@@ -62,6 +54,28 @@ Current vision-language models process observations **independently**, causing c
 - 🚗 **Autonomous Vehicles**: Understanding traffic pattern changes over time
 - 🤖 **Human-AI Interaction**: Maintaining conversation context across interactions
 
+---
+
+## 🏗️ **System Architecture**
+```mermaid
+graph TD
+    A[Visual Observation] --> B[Feature Extraction]
+    B --> C[Temporal Buffer<br/>Priority-Weighted]
+    C --> D[LSTM Processor<br/>BiDirectional]
+    D --> E[Attention Mechanism<br/>Multi-Head]
+    E --> F[Context Integration]
+    G[Task Command] --> F
+    F --> H[LLaVA Decision Engine]
+    H --> I[Action Output]
+    I --> J[Environment]
+    J --> A
+    C --> K[Memory Update]
+    K --> C
+    
+    style C fill:#e1f5fe
+    style D fill:#f3e5f5
+    style E fill:#e8f5e8
+    style H fill:#fff3e0
 ---
 
 ## Comprehensive System Demonstration
