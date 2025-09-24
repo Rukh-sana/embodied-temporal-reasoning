@@ -109,23 +109,7 @@ ollama pull llava:latest
 
 ```
 
-# Quick demo script
-from temporal_llava import TemporalAgent
-
-# Initialize agent with temporal reasoning
-agent = TemporalAgent(memory_capacity=50)
-
-# Run interactive demonstration
-results = agent.run_demo()
-print(f"Success Rate: {results['success_rate']}%")  # Expected: 100%
-print(f"Average Latency: {results['latency']}ms")   # Expected: ~60ms
-
-
-
-
-
-
-  
+ 
 ## Comprehensive System Demonstration
 
 ### Phase 1: Foundation Development - Environmental Assessment
@@ -181,11 +165,6 @@ print(f"Average Latency: {results['latency']}ms")   # Expected: ~60ms
 **Evaluation Success**: Comprehensive benchmark validation addresses the **Evaluation Gap** with novel temporal reasoning quality metrics.
 
 ---
-
-
-
-
-
 
 
 
@@ -280,44 +259,6 @@ class TemporalLLaVAAgent:
 
 ---
 
-
-## Experimental Setup & Reproducibility
-
-### Prerequisites & Installation
-```bash
-# System Requirements Check
-python --version          # Requires Python 3.8+
-nvidia-smi               # CUDA-compatible GPU recommended
-free -h                  # Minimum 4GB RAM required
-
-# Install dependencies
-pip install habitat-sim requests pillow numpy opencv-python
-pip install torch torchvision transformers accelerate
-pip install wandb tensorboard tqdm pyyaml
-
-# Setup Ollama + LLaVA
-curl -fsSL https://ollama.ai/install.sh | sh
-ollama serve
-ollama pull llava:latest
-
-# Verify installation
-python scripts/verify_setup.py
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 ## Experimental Setup & Reproducibility
 
 ### Prerequisites & Installation
@@ -380,4 +321,25 @@ This research directly addresses the critical limitation in sequential task exec
   url={https://github.com/Rukh-sana/embodied-temporal-reasoning}
 }
 ```
+
+@article{liu2023llava,
+  title={Visual instruction tuning},
+  author={Liu, Haotian and Li, Chunyuan and Wu, Qingyang and Lee, Yong Jae},
+  journal={Advances in Neural Information Processing Systems},
+  volume={36},
+  year={2023}
+}
+
+@article{zawalski2024ecot,
+  title={Robotic Control via Embodied Chain-of-Thought Reasoning},
+  author={Zawalski, Michał and Chen, William and Pertsch, Karl and Mees, Oier and Finn, Chelsea and Levine, Sergey},
+  journal={arXiv preprint arXiv:2407.08693},
+  year={2024}
+}
+
+@article{savva2019habitat,
+  title={Habitat: A platform for embodied AI research},
+  author={Savva, Manolis and Kadian, Abhishek and Maks
+
+  
 **Research Achievement**: This implementation validates our core hypothesis that integrating systematic temporal reasoning into vision-language models substantially improves their effectiveness in embodied AI scenarios, achieving **100% success rates** where standard approaches achieve only **12% success**, with **real-time performance** suitable for practical deployment.
