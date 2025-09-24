@@ -53,31 +53,7 @@ Current vision-language models process observations **independently**, causing c
 - 🏠 **Household Robotics**: "Find the keys I left in the kitchen earlier"
 - 🚗 **Autonomous Vehicles**: Understanding traffic pattern changes over time
 - 🤖 **Human-AI Interaction**: Maintaining conversation context across interactions
-
----
-## 🏗️ **System Architecture**
-```mermaid
-graph TD
-    A[Visual Observation] --> B[Feature Extraction]
-    B --> C[Temporal Buffer<br/>Priority-Weighted]
-    C --> D[LSTM Processor<br/>BiDirectional]
-    D --> E[Attention Mechanism<br/>Multi-Head]
-    E --> F[Context Integration]
-    G[Task Command] --> F
-    F --> H[LLaVA Decision Engine]
-    H --> I[Action Output]
-    I --> J[Environment]
-    J --> A
-    C --> K[Memory Update]
-    K --> C
-    
-    style C fill:#e1f5fe
-    style D fill:#f3e5f5
-    style E fill:#e8f5e8
-    style H fill:#fff3e0
-
-
----
+  
 
 ## Comprehensive System Demonstration
 
