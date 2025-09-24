@@ -1,8 +1,8 @@
 # Temporal Multimodal Reasoning in Embodied AI
 **Continuous Vision-Language Understanding for Dynamic Environment Adaptation**
 
-#![Comprehensive Temporal Demo](assets/videos/comprehensive_temporal_demo.gif)
 ![Comprehensive Temporal Demo](https://raw.githubusercontent.com/Rukh-sana/embodied-temporal-reasoning/main/assets/comprehensive_temporal_demo.gif)
+
 *Live demonstration: LSTM-attention hybrid architecture achieving 100% success on multi-step temporal reasoning tasks*
 
 ---
@@ -89,15 +89,6 @@ Current vision-language models process observations independently, failing catas
 Visual Input → Temporal Buffer → LSTM Processing → Attention Fusion → Action Output
      ↑                                                                    ↓
      └────────── Priority-Weighted Memory Integration ←──────────────────┘
-```
-
-**Mathematical Framework Implementation**:
-```python
-# Core temporal reasoning system from research proposal
-f_t = MultiModalConcat(v_t, l_t, a_{t-1}, p_t)
-h_t = BiLSTM(f_t, h_{t-1})  
-c_t = Attention(h_1, ..., h_t)
-o_final = LayerNorm(Fusion(o_visual, o_language, λo_temporal))
 ```
 
 ### Performance Metrics Dashboard
