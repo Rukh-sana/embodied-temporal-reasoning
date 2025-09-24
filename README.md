@@ -55,7 +55,6 @@ Current vision-language models process observations **independently**, causing c
 - 🤖 **Human-AI Interaction**: Maintaining conversation context across interactions
 
 ---
-
 ## 🏗️ **System Architecture**
 ```mermaid
 graph TD
@@ -76,6 +75,8 @@ graph TD
     style D fill:#f3e5f5
     style E fill:#e8f5e8
     style H fill:#fff3e0
+
+
 ---
 
 ## Comprehensive System Demonstration
