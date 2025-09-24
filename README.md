@@ -139,32 +139,6 @@ The system consistently achieves research targets across all evaluation scenario
 - Effect Size: Cohen's d reported for practical significance ✅
 - Confidence Intervals: 95% CI for all performance metrics ✅
 
-
-```markdown
-## 🏆 **Experimental Results**
-
-### Performance Comparison
-
-| Method | Success Rate | Context Length | Latency | Memory Usage |
-|--------|:------------:|:--------------:|:-------:|:------------:|
-| Standard LLaVA | 12.3% | 1-2 steps | 1267ms | Low |
-| LLaVA + Simple Buffer | 34.7% | 5-10 steps | 1385ms | Medium |
-| **Temporal LLaVA (Ours)** | **100%** ✅ | **90+ steps** ✅ | **59.9ms** ⚡ | **Efficient** ✅ |
-
-### Detailed Performance Metrics
-- **Task Completion**: 100% success rate (95% CI: 97.1-100%)
-- **Temporal Consistency**: 100% accuracy in maintaining context
-- **Response Latency**: 59.9ms average (vs. 100ms target)
-- **Memory Efficiency**: Linear scaling with sequence length
-- **Statistical Significance**: p < 0.001 across all comparisons
-
-### Benchmark Results by Task Category
-```python
-Navigation Tasks:     100% ✅  (Target: >85%)
-Object Search:        100% ✅  (Target: >80%)  
-Multi-step Commands:  100% ✅  (Target: >75%)
-Context Retention:     98% ✅  (Target: >90%)
-
 ```
 ---
 
