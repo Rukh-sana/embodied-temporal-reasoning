@@ -33,6 +33,28 @@ Standard LLaVA: **12% success** → Our Temporal LLaVA: **100% success** on sequ
 
 ------------------------------------------------------------------------------------
 
+## 🔬 Research Problem Addressed
+
+### The Sequential Task Failure Problem
+Current vision-language models process observations **independently**, causing catastrophic failure on sequential tasks that require temporal context.
+
+| Challenge | Standard LLaVA | Our Solution |
+|-----------|----------------|--------------|
+| **Multi-step Commands** | 12% success | **100% success** ✅ |
+| **Context Retention** | 1-2 steps | **90+ steps** ✅ |
+| **Memory Integration** | None | **Priority-weighted** ✅ |
+| **Real-time Performance** | N/A | **59.9ms latency** ✅ |
+
+**Research Gap Addressed**: The critical lack of systematic temporal memory mechanisms for extended interaction sequences in embodied AI environments.
+
+**Why This Matters**: 
+- 🏠 **Household Robotics**: "Find the keys I left in the kitchen earlier"
+- 🚗 **Autonomous Vehicles**: Understanding traffic pattern changes over time
+- 🤖 **Human-AI Interaction**: Maintaining conversation context across interactions
+
+
+------------------------------------------------------------------------------------
+
 
 ## Research Problem Addressed
 
