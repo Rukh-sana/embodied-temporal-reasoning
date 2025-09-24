@@ -47,21 +47,9 @@ Current vision-language models process observations **independently**, causing c
 
 **Research Gap Addressed**: The critical lack of systematic temporal memory mechanisms for extended interaction sequences in embodied AI environments.
 
-**Why This Matters**: 
-- 🏠 **Household Robotics**: "Find the keys I left in the kitchen earlier"
-- 🚗 **Autonomous Vehicles**: Understanding traffic pattern changes over time
-- 🤖 **Human-AI Interaction**: Maintaining conversation context across interactions
 
 
 ------------------------------------------------------------------------------------
-
-
-## Research Problem Addressed
-
-Current vision-language models process observations independently, failing catastrophically on sequential tasks. **Standard LLaVA achieves only 12% success** on multi-step commands versus **100% success** with our temporal reasoning integration.
-
-**Core Research Gap**: Integration of systematic temporal memory mechanisms for extended interaction sequences in embodied AI environments.
-
 ## Key Research Contributions
 
 | **Research Objective** | **Target** | **Achieved** | **Status** |
@@ -71,6 +59,11 @@ Current vision-language models process observations independently, failing catas
 | **Response Latency** | <100ms | **59.9ms** | ✅ Achieved |
 | **Task Success Rate** | >85% | **100%** | ✅ Exceeded |
 | **Statistical Significance** | p<0.05 | **Validated** | ✅ Achieved |
+
+**Why This Matters**: 
+- 🏠 **Household Robotics**: "Find the keys I left in the kitchen earlier"
+- 🚗 **Autonomous Vehicles**: Understanding traffic pattern changes over time
+- 🤖 **Human-AI Interaction**: Maintaining conversation context across interactions
 
 ---
 
