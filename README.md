@@ -163,6 +163,7 @@ The system consistently achieves research targets across all evaluation scenario
 - Effect Size: Cohen's d reported for practical significance ✅
 - Confidence Intervals: 95% CI for all performance metrics ✅
 
+```
 ---
 
 ## Technical Implementation
