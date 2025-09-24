@@ -109,6 +109,17 @@ ollama pull llava:latest
 
 ```
 
+# Quick demo script
+from temporal_llava import TemporalAgent
+
+# Initialize agent with temporal reasoning
+agent = TemporalAgent(memory_capacity=50)
+
+# Run interactive demonstration
+results = agent.run_demo()
+print(f"Success Rate: {results['success_rate']}%")  # Expected: 100%
+print(f"Average Latency: {results['latency']}ms")   # Expected: ~60ms
+
 
 
 
@@ -268,6 +279,44 @@ class TemporalLLaVAAgent:
 - **Timeline**: Months 25-36 → **Completed**
 
 ---
+
+
+## Experimental Setup & Reproducibility
+
+### Prerequisites & Installation
+```bash
+# System Requirements Check
+python --version          # Requires Python 3.8+
+nvidia-smi               # CUDA-compatible GPU recommended
+free -h                  # Minimum 4GB RAM required
+
+# Install dependencies
+pip install habitat-sim requests pillow numpy opencv-python
+pip install torch torchvision transformers accelerate
+pip install wandb tensorboard tqdm pyyaml
+
+# Setup Ollama + LLaVA
+curl -fsSL https://ollama.ai/install.sh | sh
+ollama serve
+ollama pull llava:latest
+
+# Verify installation
+python scripts/verify_setup.py
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 ## Experimental Setup & Reproducibility
 
