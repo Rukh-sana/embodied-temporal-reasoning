@@ -21,6 +21,16 @@ Standard LLaVA: **12% success** → Our Temporal LLaVA: **100% success** on sequ
 
 [**[Paper]**](#) | [**[Demo]**](#demo) | [**[Installation]**](#installation) | [**[Usage]**](#usage)
 
+## 📋 **Table of Contents**
+- [🔬 Research Problem](#research-problem-addressed)
+- [🏆 Key Results](#key-research-contributions)
+- [🎬 Demo](#comprehensive-system-demonstration)
+- [⚙️ Installation](#technical-implementation)
+- [🚀 Usage](#experimental-setup--reproducibility)
+- [📊 Evaluation](#research-objectives-achievement)
+- [🔮 Future Work](#research-impact--future-directions)
+- [📝 Citation](#citation)
+
 ------------------------------------------------------------------------------------
 
 
