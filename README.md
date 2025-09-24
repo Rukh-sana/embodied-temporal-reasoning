@@ -1,8 +1,7 @@
 # Temporal Multimodal Reasoning in Embodied AI
 **Continuous Vision-Language Understanding for Dynamic Environment Adaptation**
 
-#![Comprehensive Temporal Demo](assets/videos/comprehensive_temporal_demo.gif)
-<img src="assets/videos/comprehensive_temporal_demo.gif" alt="Temporal Demo" width="800"/>
+![Comprehensive Temporal Demo](assets/videos/comprehensive_temporal_demo.gif)
 *Live demonstration: LSTM-attention hybrid architecture achieving 100% success on multi-step temporal reasoning tasks*
 
 ---
