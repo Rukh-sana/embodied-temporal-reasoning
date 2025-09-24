@@ -23,14 +23,6 @@ Standard LLaVA: **12% success** → Our Temporal LLaVA: **100% success** on sequ
 
 ------------------------------------------------------------------------------------
 
-# Temporal Multimodal Reasoning in Embodied AI
-**Continuous Vision-Language Understanding for Dynamic Environment Adaptation**
-
-![Comprehensive Temporal Demo](https://raw.githubusercontent.com/Rukh-sana/embodied-temporal-reasoning/main/assets/comprehensive_temporal_demo.gif)
-
-*Live demonstration: LSTM-attention hybrid architecture achieving 100% success on multi-step temporal reasoning tasks*
-
----
 
 ## Research Problem Addressed
 
