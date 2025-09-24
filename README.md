@@ -47,9 +47,6 @@ Current vision-language models process observations **independently**, causing c
 
 **Research Gap Addressed**: The critical lack of systematic temporal memory mechanisms for extended interaction sequences in embodied AI environments.
 
-
-
-------------------------------------------------------------------------------------
 ## Key Research Contributions
 
 | **Research Objective** | **Target** | **Achieved** | **Status** |
