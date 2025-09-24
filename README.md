@@ -54,6 +54,47 @@ Current vision-language models process observations **independently**, causing c
 - 🚗 **Autonomous Vehicles**: Understanding traffic pattern changes over time
 - 🤖 **Human-AI Interaction**: Maintaining conversation context across interactions
   
+markdown## 🏗️ **System Architecture**
+
+### LSTM-Attention Hybrid Framework
+Visual Observation → Feature Extraction → Temporal Buffer (Priority-Weighted)
+↓
+Task Command → Language Processing → Context Integration ← LSTM Processor
+↓              (BiDirectional)
+Attention Mechanism → Action Output
+(Multi-Head)           ↓
+Environment
+↑                ↓
+Memory Update ←─── Feedback Loop
+
+### Key Technical Innovations
+
+1. **Priority-Weighted Temporal Buffer**
+   - Maintains relevant context across 90+ interaction steps
+   - Selective memory retention based on task relevance
+   - Efficient storage with linear complexity scaling
+
+2. **LSTM-Attention Hybrid Processing**
+   - BiLSTM for sequential temporal understanding
+   - Multi-head attention for selective context focus  
+   - Real-time processing: 59.9ms total latency
+
+3. **Dynamic Memory Integration**
+   - Continuous context updates during task execution
+   - Priority-based memory consolidation
+   - Temporal consistency validation mechanisms
+
+### Performance Architecture
+```python
+# Core system components
+Temporal Buffer:     512-dim vectors, 50-step capacity
+LSTM Processor:      BiDirectional, 512 hidden units
+Attention Mechanism: 8-head multi-attention, 64-dim keys
+Memory Integration:  Priority-weighted, real-time updates
+
+
+
+
 
 ## Comprehensive System Demonstration
 
